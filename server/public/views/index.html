@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <title>Angular Routing Magic!</title>
     <link rel="stylesheet" href="/styles/bootstrap.min.css" />
+    <link rel="stylesheet" href="/styles/master.css">
     <script src="/vendor/angular.min.js" type="text/javascript"></script>
     <script src="/vendor/angular-route.min.js" type="text/javascript"></script>
     <script src="/scripts/client.js" type="text/javascript"></script>
@@ -14,15 +15,22 @@
 </head>
 
 <body ng-app="myApp">
-    <nav>
-        <a href="#!/harry">Harry Potter</a>
-        <a href="#!/jarjar">Jar Jar Binks</a>
-        <a href="#!/wilee">Wile E. Coyote</a>
-    </nav>
-    <div ng-view>
+    <div class="container-fluid">
+        <nav class="nav nav-tabs nav-justified">
+            <li>
+                <a href="#!/harry">Harry Potter</a>
+            </li>
+            <li>
+                <a href="#!/jarjar">Jar Jar Binks</a>
+            </li>
+            <li>
+                <a href="#!/wilee">Wile E. Coyote</a>
+            </li>
+        </nav>
+        <main ng-view>
 
+        </main>
     </div>
-
 </body>
 
 </html>

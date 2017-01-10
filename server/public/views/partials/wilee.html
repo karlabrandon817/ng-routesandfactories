@@ -1,11 +1,13 @@
 <h1>Wile E. Coyote</h1>
-<img src="https://hollywoodhatesme.files.wordpress.com/2010/09/wile-e-coyote.jpg">
-<p>About Wile E.: Wile E. is also known simply as "The Coyote"</p>
-<button ng-click="highfiveWilee()">High Five Wile E.</button>
-<p>{{ success }} successful out of {{ attempts }} attempts</p>
-<div ng-show="status == 'success'">
-    Nailed it!
-</div>
-<div ng-show="status == 'failure'">
-    Try again loser..
+<img src="https://hollywoodhatesme.files.wordpress.com/2010/09/wile-e-coyote.jpg" class="col-xs-12 col-md-4 col-md-offset-4">
+<div class="col-xs-12 text-center">
+    <p>About Wile E.: Wile E. is also known simply as "The Coyote"</p>
+    <button class="btn" ng-click="highfiveWilee()">High Five Wile E.</button>
+    <p>{{ success }} successful out of {{ attempts }} attempts</p>
+    <div class="alert alert-success" ng-show="status == 'success'">
+        Nailed it!
+    </div>
+    <div class="alert alert-danger" ng-show="status == 'failure'">
+        Try again loser..
+    </div>
 </div>

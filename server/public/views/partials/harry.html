@@ -1,11 +1,13 @@
-<h1>Harry Potter</h1>
-<img src="http://vignette3.wikia.nocookie.net/harrypotter/images/6/63/Harry-Potter-Hedwig.jpg/revision/latest?cb=20130612023937">
-<p>About Harry: Harry is a wizard.</p>
-<button ng-click="highfiveHarry()">High Five Harry</button>
-<p>{{ success }} successful out of {{ attempts }} attempts</p>
-<div ng-show="status == 'success'">
-    Successful high five!
-</div>
-<div ng-show="status == 'failure'">
-    You missed!
+<h1 class="text-center">Harry Potter</h1>
+<img src="http://vignette3.wikia.nocookie.net/harrypotter/images/6/63/Harry-Potter-Hedwig.jpg/revision/latest?cb=20130612023937" class="col-xs-12 col-md-4 col-md-offset-4">
+<div class="col-xs-12 text-center">
+    <p>About Harry: Harry is a wizard.</p>
+    <button class="btn" ng-click="highfiveHarry()">High Five Harry</button>
+    <p>{{ success }} successful out of {{ attempts }} attempts</p>
+    <div class="alert alert-success" ng-show="status == 'success'">
+        Successful high five!
+    </div>
+    <div class="alert alert-danger" ng-show="status == 'failure'">
+        You missed!
+    </div>
 </div>
