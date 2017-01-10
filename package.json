@@ -1,0 +1,24 @@
+{
+  "name": "ng-routesandfactories",
+  "version": "1.0.0",
+  "description": "In this assignment, you'll be making a making an app to high five fictional characters. However, each fictional character's skill with high-fiving will be randomly generated. And each high five may or may not work!",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server/app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/karlabrandon817/ng-routesandfactories.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/karlabrandon817/ng-routesandfactories/issues"
+  },
+  "homepage": "https://github.com/karlabrandon817/ng-routesandfactories#readme",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0"
+  }
+}
